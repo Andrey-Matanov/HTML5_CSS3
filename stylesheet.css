@@ -2,10 +2,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #445161;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #445161;
 }
 /* common-styles #1*/
 .section-padding{
@@ -24,6 +28,14 @@ body {
     border-radius: 5px;
     outline: none;
     padding: 15px;
+}
+.button {
+    border: 1px solid white;
+}
+.button:hover {
+    border: 1px solid white;
+    background-color: #445161;
+    color: white;
 }
 /* product-section */
 .product {
@@ -82,6 +94,15 @@ body {
     line-height: 1.5em;
     list-style: none;
     margin-top: 35px;
+    padding-left: 42px;
+    padding-right: 20px;
+    position: relative;
+}
+.dignity-and-pluses-list-item::before {
+    content: url('./assets/plus-icon.png');
+    position: absolute;
+    left: 0px;
+    top: 5px;
 }
 /* screenshots-section */
 .screenshots {
@@ -96,7 +117,13 @@ body {
     flex-basis: 50%;
     display: flex;
     justify-content: space-between;
+    padding-right: 15px;
     margin-top: 30px;
+}
+.screenshots-item-image {
+    max-width: 200px;
+    max-height: 150px;
+    margin-right: 15px;
 }
 .screenshots-item-description {
     flex-basis: 65%;
@@ -122,19 +149,36 @@ body {
 .reviews-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .reviews-list-item {
-    flex-basis: 49%;
+    flex-basis: 40%;
     background-color: #EBEBEB;
     font-size: 14px;
     line-height: 1.29em;
     padding: 15px;
     margin-top: 25px;
+    position: relative;
+    list-style: none;
 }
+.reviews-list-item::before {
+    content: url('./assets/userpic.png');
+    position: absolute;
+    top: 0px;
+    left: -90px;
+}
+
 .reviews-review-text {
     font-style: italic;
     margin-bottom: 15px;
+}
+.reviews-review-text::before  {
+    content: '';
+    border: 10px solid transparent;
+    border-right: 10px solid #EBEBEB;
+    position: absolute;
+    top: 20px;
+    left: -20px;
 }
 .reviews-review-author {
     color: #989898;;
@@ -191,7 +235,6 @@ body {
     color: #445161;
     font-size: 18px;
     font-weight: bold;
-    border: none;
     border-radius: 5px;
 }
 /* contacts-section */
@@ -207,10 +250,21 @@ body {
     margin-bottom: 30px;
 }
 .contact-form {
-    flex-basis: 50%;
+    flex-basis: 60%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.contact-form-field {
+    font-family: inherit;
+}
+.contact-form-field:placeholder-shown {
+    color: #445162;
+    font-family: inherit;
+}
+.contact-form-field::placeholder {
+    color: #445162;
+    font-family: inherit;
 }
 .contacts-form-name {
     flex-basis: 100%;
@@ -232,6 +286,47 @@ body {
 }
 .contacts-main {
     flex-basis: 30%;
+}
+.contacts-list {
+    padding: 0 0 0 30px;
+}
+.contacts-list-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+.contacts-link {
+    color: white;
+    text-decoration: none;
+}
+.contacts-link:hover {
+    text-decoration: underline;
+}
+.skype::before {
+    content: url(./assets/skype-icon.png);
+    position: absolute;
+    left: -30px;
+    top: -3px;
+}
+.icq::before{
+    content: url(./assets/icq-icon.png);
+    position: absolute;
+    left: -30px;
+    top: -3px;
+}
+.email::before {
+    content: url(./assets/email-icon.png);
+    position: absolute;
+    left: -30px;
+    top: -3px;
+}
+.phone-number::before {
+    content: url(./assets/phone-icon.png);
+    position: absolute;
+    left: -30px;
+    top: -3px;
+}
+.contacts-social-button-map {
+    outline: none;
 }
 /* footer */
 .footer {
