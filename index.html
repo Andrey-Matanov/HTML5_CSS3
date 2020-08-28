@@ -19,7 +19,7 @@
                 <li class="product-description-item">Associate the page with the payment system</li>
             </ul>
         </div>
-        <img src="./assets/350x150.png" alt="product image" class="product-image" width="470" height="215">
+        <img src="./assets/product-image.png" alt="product image" class="product-image" width="470" height="215">
     </section>
 
     <section class="about-product section-padding">
@@ -34,7 +34,9 @@
                 nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
             </p>
         </div>
-        <img src="./assets/350x150.png" alt="about product image" class="about-product-image" width="430" height="245">
+        <video width="430" autoplay controls loop>
+            <source src="./assets/how-to-become-rich.mp4" type="video/mp4">
+        </video>
     </section>
 
     <section class="dignity-and-pluses section-padding">
@@ -88,8 +90,7 @@
     <section class="screenshots section-padding">
         <h2 class="screenshots-heading h2-heading">Screenshots</h2>
         <figure class="screenshots-item no-top-margin">
-            <img src="./assets/350x150.png" alt="Screenshot #1" class="screenshots-item-image" width="200"
-            height="150">
+            <img src="./assets/screenshots-image.svg" alt="Screenshot #1" class="screenshots-item-image">
             <figcaption class="screenshots-item-description">
                 <h3 class="screenshots-item-description-heading">The description for the image</h3>
                 <p class="screenshots-item-description-text">
@@ -100,8 +101,7 @@
             </figcaption>
         </figure>
         <figure class="screenshots-item no-top-margin">
-            <img src="./assets/350x150.png" alt="Screenshot #2" class="screenshots-item-image" width="200"
-            height="150">
+            <img src="./assets/screenshots-image.svg" alt="Screenshot #2" class="screenshots-item-image">
             <figcaption class="screenshots-item-description">
                 <h3 class="screenshots-item-description-heading">The description for the image</h3>
                 <p class="screenshots-item-description-text">
@@ -112,8 +112,7 @@
             </figcaption>
         </figure>
         <figure class="screenshots-item">
-            <img src="./assets/350x150.png" alt="Screenshot #3" class="screenshots-item-image" width="200"
-            height="150">
+            <img src="./assets/screenshots-image.svg" alt="Screenshot #3" class="screenshots-item-image">
             <figcaption class="screenshots-item-description">
                 <h3 class="screenshots-item-description-heading">The description for the image</h3>
                 <p class="screenshots-item-description-text">
@@ -124,8 +123,7 @@
             </figcaption>
         </figure>
         <figure class="screenshots-item">
-            <img src="./assets/350x150.png" alt="Screenshot #4" class="screenshots-item-image" width="200"
-            height="150">
+            <img src="./assets/screenshots-image.svg" alt="Screenshot #4" class="screenshots-item-image">
             <figcaption class="screenshots-item-description">
                 <h3 class="screenshots-item-description-heading">The description for the image</h3>
                 <p class="screenshots-item-description-text">
@@ -180,7 +178,7 @@
                     <li class="buy-it-section-advantages-item">Cum odio, iste quia doloribus autem;</li>
                     <li class="buy-it-section-advantages-item">Aperiam nulla ea neque.</li>
                 </ol>
-                <button class="buy-it-section-button">BUY</button>
+                <button class="buy-it-section-button button">BUY</button>
             </section>
     
             <section class="buy-it-section">
@@ -196,7 +194,7 @@
                     <li class="buy-it-section-advantages-item">Cum odio, iste quia doloribus autem;</li>
                     <li class="buy-it-section-advantages-item">Aperiam nulla ea neque.</li>
                 </ol>
-                <button class="buy-it-section-button">BUY</button>
+                <button class="buy-it-section-button button">BUY</button>
             </section>
     
             <section class="buy-it-section">
@@ -216,7 +214,7 @@
                     <li class="buy-it-section-advantages-item">Cum odio, iste quia doloribus autem;</li>
                     <li class="buy-it-section-advantages-item">Aperiam nulla ea neque.</li>
                 </ol>
-                <button class="buy-it-section-button">BUY</button>
+                <button class="buy-it-section-button button">BUY</button>
             </section> 
         </div>
 
@@ -228,27 +226,29 @@
             <input type="text" class="contacts-form-name contact-form-field" placeholder="Your name">
             <input type="email" class="contacts-form-email contact-form-field" placeholder="Your email">
             <textarea name="message" class="contacts-form-message contact-form-field" placeholder="Your message"></textarea>
-            <input type="submit" class="contacts-form-submit contact-form-field" value="SEND">
+            <input type="submit" class="contacts-form-submit button contact-form-field" value="SEND">
         </form>
         <div class="contacts-main">
             <ul class="contacts-list">
                 <li class="contacts-list-item skype">here_your_login_skype</li>
                 <li class="contacts-list-item icq">279679659</li>
                 <li class="contacts-list-item email">
-                    <a href="mailto:psdhtmlcss@mail.ru">psdhtmlcss@mail.ru</a> 
+                    <a class="contacts-link" href="mailto:psdhtmlcss@mail.ru">psdhtmlcss@mail.ru</a> 
                 </li>
                 <li class="contacts-list-item phone-number">
-                    <a href="tel:800045685555">80 00 4568 55 55</a>
+                    <a class="contacts-link" href="tel:800045685555">80 00 4568 55 55</a>
                 </li>
             </ul>
-            <div class="contacts-social-buttons">
-                <a href="#" class="contacts-social-button">twitter</a>
-                <a href="#" class="contacts-social-button">fb</a>
-                <a href="#" class="contacts-social-button">in</a>
-                <a href="#" class="contacts-social-button">google</a>
-                <a href="#" class="contacts-social-button">youtube</a>
-            </div>
-        </div>
+
+<img src="./assets/social-buttons.png" usemap="#image-map">
+
+<map name="image-map">
+    <area target="_blank" alt="Twitter" title="Twitter" href="https://twitter.com/" coords="21,20,19" shape="circle">
+    <area target="_blank" alt="Facebook" title="Facebook" href="https://ru-ru.facebook.com/" coords="70,21,19" shape="circle">
+    <area target="_blank" alt="Instagram" title="Instagram" href="https://www.instagram.com/" coords="119,20,20" shape="circle">
+    <area target="_blank" alt="Google+" title="Google+" href="https://plus.google.com/" coords="170,20,19" shape="circle">
+    <area target="_blank" alt="Youtube" title="Youtube" href="https://www.youtube.com/" coords="219,21,20" shape="circle">
+</map>
 
     </section>
 
