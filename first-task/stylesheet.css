@@ -55,8 +55,7 @@ body {
     line-height: 36px;
     list-style: none;
 }
-.product-description-item::before {
-    content: '✅';
+.check-mark {
     margin-right: 10px;
 }
 /* about-product-section */
@@ -325,8 +324,19 @@ body {
     left: -30px;
     top: -3px;
 }
-.contacts-social-button-map {
-    outline: none;
+.contacts-social-button { 
+    background-color: white;
+    border: 1px solid #445162;
+    padding: 12px;
+    width: 42px;
+    border-radius: 100%;
+    text-align: center;
+    color: #445162;
+}
+.contacts-social-button:hover {
+    border: 1px solid white;
+    color: white;
+    background-color: #445162;
 }
 /* footer */
 .footer {
